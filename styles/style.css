@@ -104,3 +104,11 @@ body {
     margin-top: 5px;
     ;
 }
+.collections a{
+    text-decoration: none;
+    text-align: right;
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    ;
+}
