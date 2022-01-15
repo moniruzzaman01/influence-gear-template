@@ -83,7 +83,7 @@ body {
     ;
 }
 
-.hero-section .content button {
+.button {
     padding: 10px 25px;
     font-size: 16px;
     font-weight: 700;
@@ -93,6 +93,13 @@ body {
     color: #fff;
     cursor: pointer;
     ;
+}
+.button i{
+    transition: all 0.2s linear;
+    ;
+}
+.button:hover i{
+    transform: scale(1.5) translateX(5px);
 }
 
 .fa-arrow-right {
@@ -112,7 +119,7 @@ body {
 }
 
 /* popular collections */
-.collections {
+.collections, .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
@@ -120,7 +127,7 @@ body {
     ;
 }
 
-.collection {
+.collection, .product {
     width: 330px;
     height: 475px;
     padding: 20px;
@@ -130,13 +137,13 @@ body {
     ;
 }
 
-.collection img {
+.collection img, .product img {
     width: 100%;
     border-radius: 5px;
     ;
 }
 
-.collection h2 {
+.collection h2, .product h2 {
     font-size: 28px;
     font-weight: 500;
     color: #18191F;
@@ -145,7 +152,7 @@ body {
     ;
 }
 
-.collection .price {
+.collection .price, .product .price {
     font-size: 24px;
     color: #000;
     margin: 0;
@@ -172,7 +179,7 @@ body {
     ;
 }
 
-.collection .details {
+.collection .details, .product .details {
     font-size: 14px;
     font-weight: 700;
     margin-top: 5px;
@@ -185,6 +192,16 @@ body {
     color: #E02C6D;
     font-size: 16px;
     font-weight: 700;
+}
+/* new products */
+.new-products{
+    font-size: 16px;
+    background-color: tomato;
+    padding: 5px 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    ;
 }
 
 /* footer styles */
@@ -234,7 +251,7 @@ footer .social-icons i {
         display: none;
         ;
     }
-    .hero-section, .collections{
+    .hero-section, .collections, .products{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         grid-row-gap: 100px;
@@ -247,7 +264,7 @@ footer .social-icons i {
         align-items: center;
         ;
     }
-    .collection {
+    .collection, .product {
         width: 80%;
         height: 100%;
         ;
